@@ -1,21 +1,24 @@
 import './App.css'
-import NavBAr from './components/NavBar'
-import ItemListContainer from './components/ItemListContainer'
-import NavBar from './components/NavBar'
-
-
-
-
+import NavBar from './components/NavBar/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Error } from './components/Error404/Error'
+import Footer from './components/Footer/Footer'
 
 function App() {
 
   return (
-    <div>
+    <BrowserRouter>
       <NavBar/>
-      <ItemListContainer saludo="¡ Bienvenidos a Ficus, tu tienda de plantas favorita !"/>
-      
-
-    </div>
+      <Routes>
+        <Route path='/' element={<ItemListContainer />} />
+        <Route path='/categoria/:idCategoria' element={<ItemListContainer />}/>
+        <Route path="/detalle/:idProducto" element={<ItemDetailContainer/>}/>
+        <Route path="*" element={ <Error/>} />
+      </Routes>
+      <Footer/>
+    </BrowserRouter>
   )
 }
 

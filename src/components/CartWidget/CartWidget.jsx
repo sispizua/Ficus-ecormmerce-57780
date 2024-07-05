@@ -1,5 +1,5 @@
 import React from 'react'
-import { TbGardenCart } from "react-icons/tb";
+import { TbGardenCart } from 'react-icons/tb' 
 import "./CartWidget.css"
 
 const CartWidget = () => {
