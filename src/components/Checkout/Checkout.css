@@ -1,6 +1,49 @@
-.formulario{
+.checkout{
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
     color:  black;
-    background-color: green;
     display:flex;
     padding-top: 90px;
+    align-items: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+    gap: 10px;
+}
+
+.formulario input{
+    height: 20px;
+    width: 200px;
+}
+
+.formulario button{
+    text-decoration: none;
+    background-color: #292A2E;
+    color: white;
+    border: 0.25rem solid #5F6F52;
+    border-radius: .25rem;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.checkout-exito{
+    display: flex;
+    flex-direction: column;
+    height: 77vh;
+    color:  black;
+    display:flex;
+    padding-top: 90px;
+    align-items: center;
+}
+.num-pedido{
+    
 }

@@ -5,6 +5,7 @@ import Formulario from './Formulario'
 import { CartContext } from '../../context/CartContext'
 import db from '../../db/db'
 import { collection, addDoc } from 'firebase/firestore'
+import { Link } from 'react-router-dom'
 
 const Checkout = () => {
 const { carrito, precioTotal } = useContext(CartContext)
@@ -43,9 +44,11 @@ const subirOrden = (datos)=> {
   return (
     <div>
         {idOrden ? ( 
-            <div>
+            <div className='checkout-exito'>
                 <h2>Orden generada con exito !</h2>
-                <p>Su numero de pedido es: {idOrden} </p>
+                <p className='num-pedido'>Su numero de pedido es: {idOrden} </p>
+                <Link className="volver-tienda"to="/">Realizar otra compra</Link>
+
                 
             </div>) :
             (<Formulario 

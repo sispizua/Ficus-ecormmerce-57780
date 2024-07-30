@@ -3,6 +3,8 @@ import React from 'react'
 
 const Formulario = ({datosForm,guardarDAtosinput, enviarOrden}) => {
   return (
+    <div className='checkout'>
+      <h3>Completa el formilario para terminar tu compra !</h3>
     <form className='formulario' onSubmit={enviarOrden}>
             <label>Nombre</label>
             <input type="text" name='nombre' value={datosForm.nombre} onChange={guardarDAtosinput} />
@@ -16,7 +18,7 @@ const Formulario = ({datosForm,guardarDAtosinput, enviarOrden}) => {
             <button type='submit'>Enviar orden</button>
 
         </form>
-        
+        </div>
 
   )
 }
