@@ -8,8 +8,9 @@
     align-items: center;
     justify-content: center;
     color: white;
-    
-}
+    position: fixed;
+    position: absolute;
+     }
 
 .icon{
 padding: 20px;
