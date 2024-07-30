@@ -13,14 +13,17 @@ const NavBar = () => {
         <h1>ICUS</h1>
         </Link>
             <ul className="categorias">
+
                 <Link className="categoria" to="/categoria/plantas">
                 <h3>Plantas</h3>
                 <PiPlantLight/>
                 </Link>
+
                 <Link className="categoria" to="/categoria/macetas">
                 <h3>Macetas</h3> 
                 <img className="maceta" src="../image/maceta.png" alt="" />
                 </Link>
+                
                 <Link className="categoria" to="/categoria/sustratos">
                 <h3>Sustratos</h3> 
                 <img className="tierra" src="../image/tierra.png" alt="" />

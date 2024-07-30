@@ -66,10 +66,11 @@ padding-right: 6px;
 }
 
 .maceta{
-    width: 16px;
-    height: 16px;
-}
-.tierra{
     width: 18px;
     height: 18px;
+}
+
+.tierra{
+    width: 20px;
+    height: 20px;
 }

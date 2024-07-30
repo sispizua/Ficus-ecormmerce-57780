@@ -1,9 +1,10 @@
 .ItemDetail{
-    height:430px;
-    width: 100vh;
+    height:500px;
+    width: 1000px;
     display: flex;
     flex-direction: row;
-    padding-top: 120px;
+    padding-top: 90px;
+    justify-content: space-evenly;
 
 }
 
@@ -11,12 +12,12 @@
     height: 350px;
     width: 300px;
 }
-.Detail{
+.detail{
     height: 500px;
-    width: 700px;
+    width: 500px;
 }
 
-.Detail button{
+.detail button{
     text-decoration: none;
     background-color: #292A2E;
     color: white;
@@ -27,8 +28,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    
 }
-.Detail button:hover{
+
+.detail button:hover{
     color:pink;
 
 }
+
