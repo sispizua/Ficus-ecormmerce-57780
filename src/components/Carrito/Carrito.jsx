@@ -25,7 +25,7 @@ const Carrito = () => {
             carrito.map((productoCarrito) => (
                 <div className="producto-carrito" key ={productoCarrito.id}>
                     <img src={productoCarrito.img} width={100} />
-                    <h3>{productoCarrito.nombre}, </h3>
+                    <h4>{productoCarrito.nombre} </h4>
                     <p>Precio: ${productoCarrito.precio}</p>
                     <p>Cantidad: {productoCarrito.cantidad} </p>
                     <p>Total parcial: ${productoCarrito.precio * productoCarrito.cantidad} </p>
